@@ -87,5 +87,105 @@ if(mayort> person3[1]){
 mayor=person3[1];
 console.log("ecnonctras el mayor de 3 personas ",mayor);
 
+// 11. Se les dará un bono por antigüedad a los empleados de una tienda. Si tienen un
+// año, se les dará $100; si tienen 2 años, $200, y así sucesivamente hasta los 5
+// años. Para los que tengan más de 5, el bono será de $1000. Realice un algoritmo
+// y represéntelo ,que permita determinar el bono que recibirá un trabajador
 
+function bonoantiguedad(yearanti){
+    
+    if (yearanti === 1){
+        return"su bono es: 100";
+    }else if(yearanti ===2){
+        return "su bono es: 200";
+    }else if(yearanti ===3){
+        return "su bono es: 300";
+    }else if(yearanti ===4){
+        return"su bono es: 400";
+    }else if(yearanti ===5){
+        return"su bono es: 1000";
+}
+}
+console.log("su bono es",bonoantiguedad(3));
+
+// 12. Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10 % anual
+// durante 6 años. ¿Cuál es su salario al cabo de 6 años? ¿Qué salario ha recibido
+// en cada uno de los 6 años? Realice el algoritmo y representan la solución,
+// utilizando el ciclo apropiado
+
+function sueldo(){
+    let salarioinicial=1500;
+    let incremento=0.1;
+    let salarioactual = salarioinicial;
+
+    if(salarioactual){
+        salarioactual=salarioactual+ salarioinicial*incremento;
+        console.log("primer año",salarioactual);
+    }if(salarioactual){
+        salarioactual=salarioactual+incremento*salarioactual;
+        console.log("segundo año",salarioactual);
+    }
+    if(salarioactual){
+        salarioactual=salarioactual+incremento*salarioactual;
+        console.log("tercer año",salarioactual);
+    }
+    if(salarioactual){
+        salarioactual=salarioactual+incremento*salarioactual;
+        console.log("cuarto año",salarioactual);
+    }
+}
+sueldo();
+
+
+// 13. Realice un algoritmo para leer las calificaciones de 5 alumnos y determine el
+// número de aprobados y reprobados
+function alumnos(alumno1,alumno2,alumno3,alumno4,alumno5){
+    let aprobados=0;
+    let desaprobados=0;
+     if (alumno1>10){
+        aprobados++
+     }else{
+        desaprobados++
+     }
+     if (alumno2>10){
+        aprobados++
+     }else{
+        desaprobados++
+     }
+     if (alumno3>10){
+        aprobados++
+     }else{
+        desaprobados++
+     }
+     if (alumno4>10){
+        aprobados++
+     }else{
+        desaprobados++
+     }
+     if (alumno5>10){
+        aprobados++
+     }else{
+        desaprobados++
+     } 
+ console.log("APROBADOS",aprobados,"DESAPROBOS",desaprobados);
+}
+console.log(alumnos(11,11,10,9,11));
+
+
+
+// 14. Una compañía, fabrica focos de colores (verdes, blancos y rojos). Se desea
+// contabilizar, de un lote de N focos, el número de focos de cada color que hay en
+// existencia
+
+
+// 15. Realice un algoritmo para determinar si una persona puede votar con base en
+// su edad en las próximas elecciones
+ function votar(edad){
+ if (edad<18){
+ return "no puede votar"
+ }else if( edad>=18){
+    return "si puede votar";
+ }
+}
+console.log("determina :",votar(18));
 
